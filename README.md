@@ -5,13 +5,13 @@ A 60 second timer with stopwatch function, start/stop button and reset capabilit
 
 ## Description and features
 - There are three buttons:
-  - A <strong>START_STOP</strong> button, wich pauses and unpauses, with the help of a JK flip-flop, the main timer.
-  - A <strong>RESET</strong> button, wich resets both the timer and the lap time.
-  - A <strong>LAP</strong> button, wich, when pressed, stores the timer values to a set of four 4-bit tri-state registers.
+  - A <strong>START_STOP</strong> button, which  pauses and unpauses, with the help of a JK flip-flop, the main timer.
+  - A <strong>RESET</strong> button, which  resets both the timer and the lap time.
+  - A <strong>LAP</strong> button, which , when pressed, stores the timer values to a set of four 4-bit tri-state registers.
 - There are three LEDs:
   - A <strong>POWER</strong> LED, to see if the circuit board has a power supply connected.
-  - A <strong>START_STOP</strong> LED, wich is tied to the button with the same name.
-  - An <strong>OVERFLOW</strong> LED, wich toggles when the main timer goes over 59.99 seconds.
+  - A <strong>START_STOP</strong> LED, which  is tied to the button with the same name.
+  - An <strong>OVERFLOW</strong> LED, which  toggles when the main timer goes over 59.99 seconds.
 - 8 7-segment displays: 4 for the timer and 4 for the lap time.
 - Resolution of 10ms.
 - Adjustable timer for precision calibration.
@@ -22,7 +22,7 @@ A 60 second timer with stopwatch function, start/stop button and reset capabilit
 
 ## Testing and designing steps
 
-The first step was to design the logic circuit in [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution), for an easy to change desing, while also not having to worry about the various electrcical rules.
+The first step was to design the logic circuit in [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution), for an easy to change design, while also not having to worry about the various electrical rules.
 
 ![Logisim](https://github.com/AndreiBertescu/TTL_Timer/assets/126001291/94f2c2b7-cd8f-4718-8d29-b4a40fc91957)
 
@@ -39,7 +39,7 @@ The first step was to design the logic circuit in [Logisim Evolution](https://gi
 - It has a GND copper plane on both layers.
 - All signal traces are 0.254 mm, while the 5V power trace is double the size, at 0.508 mm.
 - An additional hole for the power regulator heatsink was added.
-- Four additional holes were added to allow replacing the 555 timer potentiometer with two resistors tied in series.
+- Four additional holes were added to allow replacing the 555-timer potentiometer with two resistors tied in series.
 - Proper names were added for the various components, along with description text and a nice drawing.
 
 ![image](https://github.com/AndreiBertescu/TTL_Timer/assets/126001291/778a38c2-3f4b-4012-9341-244a571aa682)
@@ -50,22 +50,22 @@ The final steps were to order the parts, the PCB, and assemble the board.
 - The PCB was ordered from [Jlcpcb](https://jlcpcb.com/)
 
 ## Components
-- 8 7-segment displays
-- 3 LEDs
-- 3 10nF ceramic capacitors
-- 1 1uF electrolytic capacitor
-- 1 1N4002 rectifier diode
-- 1 10k trimmer potentiometer
-- 3 push switches
-- 1 barrel connector
-- 2 header pins
-- 1 LM7805 power regulator
-- 4 4-bit tri-state registers
-- 8 4-bit BCD decoders
-- 4 4-bit counters
-- 2 quad AND gate chips
-- 1 quad NOR gate chip
-- 1 dual JK flip-flop chip
+- 8x 7-segment displays
+- 3x LEDs
+- 3x 10nF ceramic capacitors
+- 1x 1uF electrolytic capacitor
+- 1x 1N4002 rectifier diode
+- 1x 10k trimmer potentiometer
+- 3x push switches
+- 1x barrel connector
+- 2x header pins
+- 1x LM7805 power regulator
+- 4x 4-bit tri-state registers
+- 8x 4-bit BCD decoders
+- 4x 4-bit counters
+- 2x quad AND gate chips
+- 1x quad NOR gate chip
+- 1x dual JK flip-flop chip
 - Various resistors
 
 ## Final statistics
